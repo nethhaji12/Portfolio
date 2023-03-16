@@ -86,20 +86,51 @@ nav ul li a:hover::after{
 .row{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
-
 .about-col-1{
-    flex-basis: 40%;
+    flex-basis: 50%;
 }
 .about-col-1 img{
 
     width: 80%;
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 30px;
 }
 
 .about-col-2{
-    flex-basis: 45%;
+    flex-basis: 50%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
 
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
 
 }
