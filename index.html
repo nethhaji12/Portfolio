@@ -42,16 +42,52 @@
                     demonstarte problem solving skill and validation of test cases.
                 </p>
                 <div class="tab-title">
-                    <p class="tab-links active-link">Skills </p>
-                    <p class="tab-links">Experience </p>
-                    <p class="tab-links">Education </p>
+                    <p class="tab-links active-link" onclick="opentab('skill')">Skills </p>
+                    <p class="tab-links" onclick="opentab('exp')">Experience </p>
+                    <p class="tab-links" onclick="opentab('edu')">Education </p>
 
+                </div>
+                <div class="tab-contents active-tab" id="skill">
+                    <ul>
+                        <li><span>Manul testing</span> <br>Functional testing,Regression testing, Sanity testing,Load/Stress testing</li>
+                        <li><span>Automation testing</span> <br> UI/UX testing, Appium, Mobile Testing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="exp">
+                    <ul>
+                        <li><span>Sep 2021 - Current </span><br> Sr.Test engineer at Amazon</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="edu">
+                    <ul>
+                        <li><span>2018</span><br>Electronics Enginnering from Easwari Engg.college</li>
+                        <li><span>2014</span><br>12th from Velammal School</li>
+                        <li><span>2012</span><br>10 from SRDKVV School</li>
+
+                    </ul>
                 </div>
             </div>
              </div>
         </div>
     </div>
 
-    
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tab){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tab).classList.add("active-tab");
+}
+
+</script>    
+
 </body>
 </html>
