@@ -149,3 +149,22 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+/*----------Contact----------*/
+.contact-left{
+    flex-basis: 50%;
+}
+.contact-left h1{
+    font-size: 30px;
+    color:coral;
+}
+.contact-left p{
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+.contact-left p i{
+    margin-right: 10px;
+    color: #ff004f;
+    font-size: 30px;
+}
